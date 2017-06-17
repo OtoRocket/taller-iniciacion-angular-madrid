@@ -11,8 +11,9 @@ Url del Review: https://adrianalonso.es/meetups/review-del-workshop-introduccion
 
 Para arrancar el proyecto:
 
-´´´
+```
+
 npm install
 npm start
 
-´´´
+```
