@@ -1,0 +1,13 @@
+<h1>{{titulo}}</h1>
+<ul class="particles">
+    <li *ngFor="let particle of particles"
+        (click)="gotoParticle(particle)">
+        <span class="code">{{particle.id}}</span>
+        {{particle.name}}
+    </li>
+</ul>
+<div *ngIf="selectedParticle">
+    <p>Selected particle: {{selectedParticle.type}} {{selectedParticle.name}}</p>
+    <button (click)="gotoDetail()">Ir al detalle</button>
+    <button (click)="goBack()">Back</button>
+</div>
